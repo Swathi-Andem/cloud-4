@@ -63,3 +63,9 @@ The JVC Projector remote platform will create a [Remote](/integrations/remote/) 
 
 The status reported is:
 - **Power on** is **True** when the projector is either in status **on** or **warming**.
+
+### Selects
+
+The following Select entities are added which allow changing device state from a list of options.
+
+- `input`
