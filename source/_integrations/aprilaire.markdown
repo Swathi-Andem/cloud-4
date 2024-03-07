@@ -7,10 +7,11 @@ ha_iot_class: Local Push
 ha_release: 2024.3
 ha_domain: aprilaire
 ha_codeowners:
-  - '@chamberlain2007'
+  - "@chamberlain2007"
 ha_config_flow: true
 ha_platforms:
   - climate
+  - sensor
 ha_integration_type: integration
 ---
 
