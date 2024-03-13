@@ -37,7 +37,7 @@ Currently supported services are:
 
 ## Integration entities
 
-The **Romy** {% term integrations %} will add the following sensors.
+The Romy will add the following sensors.
 
 Sensors:
 
