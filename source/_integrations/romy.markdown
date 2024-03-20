@@ -37,7 +37,7 @@ Currently supported services are:
 
 ## Integration entities
 
-The Romy will add the following sensors.
+The ROMY will add the following sensors.
 
 Sensors:
 
