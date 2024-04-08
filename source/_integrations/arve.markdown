@@ -21,7 +21,7 @@ The **Arve** {% term integration %} provides the ability to monitor real life ai
 {% include integrations/config_flow.md %}
 
 To create an integration for an Arve device, the user needs to fill in two required fields.
-Those are _Home Assistant acess token_ and _Arve customer token_ and _Serial number_.
+Those are _Home Assistant acess token_ and _Arve customer token_.
 _Home Assistant access token_ and _Arve customer token_ can be obtained by the user on the [Arve web platform](https://dashboard.arveair.com).
 
 ## Measurement entities
