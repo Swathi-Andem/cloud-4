@@ -467,6 +467,7 @@ layout: null
 /docs/tools/credstash/ /docs/configuration/secrets
 /docs/scripts/editor/ /docs/scripts
 /getting-started/devices /integrations
+/integrations/map /dashboards/map/
 
 # Blog
 /blog/2019/05/29/release-94 /blog/2019/06/05/release-94
@@ -508,7 +509,6 @@ layout: null
 /integrations/ee_brightbox /more-info/removed-integration 301
 /integrations/eight_sleep /more-info/removed-integration 301
 /integrations/envirophat /more-info/removed-integration 301
-/integrations/eq3btsmart /more-info/removed-integration 301
 /integrations/essent /more-info/removed-integration 301
 /integrations/facebox /more-info/removed-integration 301
 /integrations/fedex /more-info/removed-integration 301
@@ -556,6 +556,7 @@ layout: null
 /integrations/nuimo_controller /more-info/removed-integration 301
 /integrations/openalpr /more-info/removed-integration 301
 /integrations/openalpr_local /more-info/removed-integration 301
+/integrations/opencv /more-info/removed-integration 301
 /integrations/orangepi_gpio /more-info/removed-integration 301
 /integrations/ozw /more-info/removed-integration 301
 /integrations/pcal9535a /more-info/removed-integration 301

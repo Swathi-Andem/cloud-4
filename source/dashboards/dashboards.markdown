@@ -5,7 +5,7 @@ description: "Multiple powerful and configurable dashboards in Home Assistant."
 
 You can define multiple dashboards in Home Assistant. Each dashboard can be added to the sidebar. This makes it possible to create separate control dashboards for each individual part of your house.
 
-You can manage your dashboards via the user interface. Go to {% my lovelace_dashboards title="**Settings** > **Dashboards**" %}. Here you can see some of the defined dashboards and create new ones.
+Under {% my lovelace_dashboards title="**Settings** > **Dashboards**" %}, you can see your own dashboards and some of the predefined ones.
 
 <p class='img'>
 <img src='/images/dashboards/dashboard-manage-01.png' alt='Screenshot of the dashboard list'>
@@ -14,19 +14,24 @@ Screenshot of the Dashboard list.
 
 ## Home Assistant default dashboards
 
-Home Assistant ships with 5 predefined dashboards:
+Home Assistant ships with some dashboards out of the box:
 
 - Overview
 - Energy
-- Map
+- [Map](#map-dashboard)
 - Logbook
 - History
+- To-do lists
 
-Not all of predefined dashboards are listed under {% my lovelace_dashboards title="**Settings** > **Dashboards**" %}. **Map**, **Logbook**, and **History**, are powered by their respective integrations.
+Not all of the predefined dashboards are listed under {% my lovelace_dashboards title="**Settings** > **Dashboards**" %}. The **Logbook** and **History** dashboards are powered by their respective integrations.
 
 ### Map dashboard
 
-The predefined **Map** dashboard is powered by the [Map integration](/integrations/map/). If you see a [person](/integrations/person/) on the map, it means you have connected a device that allows [presence detection](/integrations/#presence-detection). This is the case for example if you have the [Home Assistant Companion App](https://companion.home-assistant.io/) on your phone and allowed location tracking.
+The predefined **Map** dashboard is populated by the [Map card](/dashboards/map/). You can edit this dashboard like any other dashboard. For example, you can edit the [view](/dashboards/views/) to use the **Sidebar** instead of the default **Panel** view type if you like.
+
+#### Maps and presence detection
+
+If you see a [person](/integrations/person/) on the map, it means you have connected a device that allows [presence detection](/integrations/#presence-detection). This is the case for example if you have the [Home Assistant Companion App](https://companion.home-assistant.io/) on your phone and allowed location tracking.
 
 ### Logbook dashboard
 
@@ -34,7 +39,36 @@ The predefined **Logbook** dashboard is powered by the [Logbook integration](/in
 
 ### History dashboard
 
-The predefined **History** dashboard is powered by the [History integration](/integrations/logbook/). To learn about the data sources used and how to export data, refer to the documentation of the History integration.
+The predefined **History** dashboard is powered by the [History integration](/integrations/history/). To learn about the data sources used and how to export data, refer to the documentation of the History integration.
+
+### To-do lists dashboard
+
+The predefined **To-do lists** dashboard is powered by the [To-do integration](/integrations/todo/). To learn how to use to-do and shopping lists, refer to the documentation of the to-do list integration.
+
+## Creating a new dashboard
+
+The default **Overview** dashboard updates itself when you add new devices, as long as you do not edit the default dashboard. If you want a customized dashboard, it is recommended not to change the **Overview** dashboard, but to create a new dashboard instead.
+
+This will leave the default dashboard intact.
+
+1. Go to {% my lovelace_dashboards title="**Settings** > **Dashboards**" %}.
+2. Select **Add dashboard**.
+   ![Screenshot of the dashboard list](/images/dashboards/dashboard-manage-02.png)
+3. In the dialog, choose one of the options:
+   - If you want to start with a pre-populated dashboard, choose **Default dashboard**.
+   - If you want to start with a completely empty dashboard, choose **New dashboard from scratch**.
+4. In the **Add new dashboard** dialog, enter a name and select an icon.
+   - Define if this dashboard should be visible only to the admin user.
+   - Define if you want the dashboard to be listed in the sidebar.
+   - Select **Create**.
+   - **Result**: The dashboard is added.
+5. Open your new dashboard and in the top right of the screen, select the <img height="28px" src="/images/blog/2024-03-dashboard-chapter-1/mdi-edit.png" alt="Edit icon"/> button.
+6. If you chose **Default dashboard**, you need to take control before you can edit it:
+   - The **Edit dashboard** dialog appears.
+     - By editing the dashboard, you are taking over control of this dashboard.
+     - This means that it is no longer automatically updated when new dashboard elements become available.
+     - To continue, in the dialog, select the three dots menu, then select **Take control**.
+7. You can now [add a card](/dashboards/cards/#adding-cards-to-your-dashboard) or [add a view](/dashboards/views/#adding-a-view-to-a-dashboard).
 
 ## Using YAML for the Overview dashboard
 
@@ -225,5 +259,6 @@ views:
 ## Related topics
 
 - [Logbook integration](/integrations/logbook/)
-- [Map integration](/integrations/map/)
 - [History integration](/integrations/history/)
+- [To-do list integration](/integrations/todo/)
+- [Views](/dashboards/views/)
