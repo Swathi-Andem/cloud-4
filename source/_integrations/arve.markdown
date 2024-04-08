@@ -5,7 +5,7 @@ ha_category:
   - Environment
   - Health
   - Sensor
-ha_release: "2024.3"
+ha_release: "2024.4"
 ha_iot_class: Cloud Polling
 ha_codeowners:
   - "@ikalnyi"
@@ -20,10 +20,9 @@ The **Arve** {% term integration %} provides the ability to monitor real life ai
 
 {% include integrations/config_flow.md %}
 
-To create an integration for an Arve device, the user needs to fill in three required fields.
-Those are _Home Assistant acess token_, _Arve customer token_ and _Serial number_.
+To create an integration for an Arve device, the user needs to fill in two required fields.
+Those are _Home Assistant acess token_ and _Arve customer token_ and _Serial number_.
 _Home Assistant access token_ and _Arve customer token_ can be obtained by the user on the [Arve web platform](https://dashboard.arveair.com).
-The _serial number_ is located on the rear panel of the Arve device.
 
 ## Measurement entities
 
