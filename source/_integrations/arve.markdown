@@ -16,7 +16,7 @@ ha_integration_type: hub
 ha_external_link: https://github.com/home-assistant/core/tree/dev/homeassistant/components/arve
 ---
 
-The **Arve** {% term integration %} provides the ability to monitor real life air quality data, measured by your [Arve](https://www.arveair.com) device.
+The **Arve** {% term integration %} provides the ability to monitor real-life air quality data, as measured by your [Arve](https://www.arveair.com) device.
 
 {% include integrations/config_flow.md %}
 
