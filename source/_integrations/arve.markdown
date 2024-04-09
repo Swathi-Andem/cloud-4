@@ -20,13 +20,13 @@ The **Arve** {% term integration %} provides the ability to monitor real life ai
 
 {% include integrations/config_flow.md %}
 
-To create an integration for an Arve device, the user needs to fill in two required fields.
+To create an integration for an Arve device, you need to fill in two required fields.
 Those are _Home Assistant acess token_ and _Arve customer token_.
 _Home Assistant access token_ and _Arve customer token_ can be obtained by the user on the [Arve web platform](https://dashboard.arveair.com).
 
 ## Measurement entities
 
-At the moment, Arve device has following measurement entities:
+At the moment, an Arve device has the following measurement entities:
 
 | Entity name | Unit of measurement |
 | ----------- | ------------------- |
@@ -46,10 +46,10 @@ CO2 - co2 measurement in parts per million;
 
 Humidity - humidity percentage;
 
-PM10 - concentration of particulates with diameter less than 10µm;
+PM10 - concentration of particulates with a diameter less than 10&nbsp;µm;
 
-PM25 - concentration of particulates with diameter less than 2.5µm;
+PM25 - concentration of particulates with a diameter less than 2.5&nbsp;µm;
 
-Temperature - temperature measurement in celsius degrees;
+Temperature - temperature measurement in degrees Celsius;
 
 TVOC - Total Volatile Organic Compounds index.
