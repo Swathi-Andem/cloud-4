@@ -60,10 +60,10 @@ Controller versions 5.1.0 and later are supported.
 - LAN Port PoE activity sensor
 - Firmware Update
 
-### Device Trackers
+### Device trackers
 
 The integration can track Wi-Fi devices connected to access points managed by the TP-Link Omada controller.
-This feature is disabled by default. Use the Options panel to enable Device Trackers. You can select which
+This feature is disabled by default. Use the **Options** panel to enable device trackers. You can select which
 clients to track from the list of known clients.
 
 Two types of trackers are supported:
