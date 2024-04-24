@@ -9,6 +9,8 @@ ha_codeowners:
   - '@dmulcahey'
 ha_domain: tag
 ha_quality_scale: internal
+ha_platforms:
+  - event
 ha_integration_type: integration
 ---
 
@@ -105,6 +107,13 @@ The seller of above tray + cards also made an [ID card printing app](https://bra
 Happy printing!
 
 ![NFC Cards](/images/blog/2020-09-15-home-assistant-tags/cards.jpg)
+
+## Entities
+
+Every card automatically creates an `event` entity. This is useful for automations or for showing on dashboards to see when the card was last scanned.
+
+State is the last datetime when the card was scanned.
+`tag_id` and `device_id` are set as attributes on the entity.
 
 ## Tag scanned events
 
