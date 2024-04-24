@@ -3,6 +3,7 @@ title: SwitchBot Cloud
 description: Instructions on how to set up SwitchBot Devices.
 ha_category:
   - Hub
+  - Lock
   - Plug
   - Remote
   - Switch
@@ -14,6 +15,7 @@ ha_domain: switchbot_cloud
 ha_platforms:
   - climate
   - switch
+  - lock
 ha_config_flow: true
 ha_integration_type: integration
 ---
@@ -32,6 +34,7 @@ Please note, device names configured in the SwitchBot app are transferred into H
 
 - Plug (Wi-Fi only, only available in Japan)
 - Plug Mini, both the original and HomeKit-enabled
+- Lock
 
 - IR appliances exposed through the different hubs:
   - ON/OFF for all appliance types excepted "Others"
